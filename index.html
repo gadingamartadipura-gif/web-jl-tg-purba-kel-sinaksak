@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f2540">
+<title>Portal Warga Lk. IX Sinaksak | Jl. TG. Purba</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f3;--surf:#fff;--surf2:#f3efe4;--ink:#14213a;--muted:#5b6578;--navy:#0b1b3a;--navy2:#13294f;--gold:#c9a24b;--gold2:#e8cf8b;--em:#0f5c4d;--line:#e6dfcc;--shadow:0 18px 50px #0b1b3a1a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1224;--surf:#111c36;--surf2:#0e1830;--ink:#f1ede2;--muted:#a5afc4;--line:#24325a;--shadow:0 18px 50px #0006}}
+:root[data-theme="dark"]{--bg:#0a1224;--surf:#111c36;--surf2:#0e1830;--ink:#f1ede2;--muted:#a5afc4;--line:#24325a;--shadow:0 18px 50px #0006}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(88px + env(safe-area-inset-top,0px));height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,'Segoe UI',Arial,sans-serif;min-height:100%}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}
+.wrap{max-width:1160px;margin:auto;padding:0 22px}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.15;margin:0}
+.gold{color:var(--gold)}.eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.ribbon{background:var(--navy);color:var(--gold2);text-align:center;font-size:12px;padding:8px 12px;letter-spacing:.4px}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:74px}
+.brand{display:flex;gap:12px;align-items:center}.mark{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,var(--gold),#8c6a1f);color:var(--navy);font:700 24px 'Playfair Display',serif;box-shadow:0 6px 18px #c9a24b55}
+.brand b{font-family:'Playfair Display',serif;font-size:18px;display:block;line-height:1.1}.brand small{color:var(--muted);font-size:12px}
+.links{display:flex;gap:22px;font-size:14px;font-weight:600;align-items:center}.links a:hover{color:var(--gold)}
+.icon-btn{border:1px solid var(--line);background:var(--surf);border-radius:12px;width:42px;height:42px;font-size:18px}
+.menu{display:none}
+.btn{border:0;border-radius:12px;padding:13px 22px;font-weight:700;display:inline-flex;gap:8px;align-items:center;background:linear-gradient(135deg,var(--gold),#a47f2c);color:#1b1405;box-shadow:0 8px 22px #c9a24b44;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn.ghost{background:transparent;color:inherit;border:1px solid var(--gold);box-shadow:none}.btn.dark{background:var(--navy);color:#fff;box-shadow:none}
+.hero{position:relative;overflow:hidden;color:#f4efe0;padding:110px 0 120px;background:radial-gradient(circle at 82% 20%,#c9a24b38,transparent 34%),radial-gradient(circle at 10% 90%,#0f5c4d88,transparent 40%),linear-gradient(125deg,#07122a,#0b1b3a 55%,#10305a)}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,#ffffff06 0 1px,transparent 1px 22px)}
+.hero:after{content:"";position:absolute;right:-140px;bottom:-220px;width:520px;height:520px;border:1px solid #c9a24b55;border-radius:50%;box-shadow:0 0 0 40px #c9a24b0d,0 0 0 90px #c9a24b08}
+.hero .wrap{position:relative;z-index:1}.hero h1{font-size:clamp(38px,6vw,74px);letter-spacing:-1px;margin:18px 0;max-width:860px}
+.hero p{max-width:640px;color:#cdd5e6;font-size:18px}.addr{display:inline-flex;gap:10px;align-items:center;border:1px solid #c9a24b66;background:#ffffff0d;padding:10px 16px;border-radius:40px;font-size:14px;color:var(--gold2);margin-top:6px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-58px;position:relative;z-index:2}
+.stat{background:var(--surf);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:18px;padding:24px;box-shadow:var(--shadow)}
+.stat b{font:700 34px 'Playfair Display',serif;display:block}.stat small{color:var(--muted)}
+section{padding:84px 0}.alt{background:var(--surf2)}
+.top{max-width:680px;margin-bottom:34px}.top h2{font-size:clamp(30px,4vw,44px);margin:8px 0 12px}.top p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:20px;padding:26px;transition:.25s;text-align:left;width:100%}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--gold)}
+.card h3{font-size:21px;margin:10px 0 6px}.card p{color:var(--muted);font-size:14.5px;margin:0}.ico{font-size:30px}
+.tag{display:inline-block;margin-top:12px;font-size:12px;font-weight:700;padding:5px 12px;border-radius:30px;background:#c9a24b22;color:var(--gold)}
+.search{width:100%;max-width:420px;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--surf);margin-bottom:24px}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.in{opacity:1;transform:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.panel{background:var(--surf);border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}.panel h3{font-size:24px;margin-bottom:14px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{position:relative;padding:26px 22px;border-radius:18px;background:var(--navy);color:#e9ecf5}.step:before{counter-increment:s;content:"0" counter(s);font:700 40px 'Playfair Display',serif;color:var(--gold);display:block}
+.step b{display:block;margin:4px 0}.step span{font-size:13.5px;color:#aeb8d0}
+.news{display:flex;flex-direction:column;justify-content:space-between;min-height:220px}.meta{font-size:12px;color:var(--muted);margin-top:14px}
+.agenda{display:grid;gap:12px}.ag{display:flex;gap:16px;align-items:center;background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:14px 18px}
+.date{min-width:62px;text-align:center;border-radius:12px;background:var(--navy);color:var(--gold2);padding:8px 4px;font:700 22px 'Playfair Display',serif;line-height:1.1}.date small{display:block;font:600 10px Inter;letter-spacing:1px;color:#aeb8d0}
+label{font-size:13px;font-weight:600;display:block;margin:0 0 6px}.fg{margin-bottom:15px}
+.field{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg)}.field:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+textarea.field{min-height:110px;resize:vertical}
+.out{display:none;margin-top:16px;padding:16px;border-radius:14px;background:#0f5c4d1f;border:1px solid #0f5c4d66;white-space:pre-wrap;font-size:14px}
+.note{font-size:12.5px;color:var(--muted);margin-top:14px}.warn{background:#c9a24b1c;border:1px solid #c9a24b66;border-radius:12px;padding:12px 14px;font-size:13px;margin-top:14px}
+details{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}summary{cursor:pointer;font-weight:600}details p{color:var(--muted);font-size:14.5px;margin:10px 0 0}
+.footer{background:var(--navy);color:#cdd5e6;padding:54px 0 40px}.footer h3{color:#fff;font-size:24px}.fg2{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer a{color:var(--gold2)}
+dialog{border:1px solid var(--gold);border-radius:24px;padding:0;width:min(94vw,640px);max-height:90vh;overflow:auto;background:var(--surf);color:var(--ink);box-shadow:0 30px 90px #0009}
+dialog::backdrop{background:#050c1caa;backdrop-filter:blur(4px)}.dh{display:flex;justify-content:space-between;gap:14px;padding:24px 28px;background:var(--navy);color:#fff}.dh h2{font-size:26px}.dh .eyebrow{font-size:10px}
+.db{padding:22px 28px 28px}.guide{border-left:3px solid var(--gold);padding:8px 14px;background:var(--surf2);border-radius:8px;font-size:13.5px;margin-bottom:18px}.guide ul{margin:4px 0;padding-left:18px}
+.da{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;margin-top:16px}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.stats,.steps{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.menu{display:block}.links{display:none;position:absolute;top:74px;left:0;right:0;flex-direction:column;align-items:flex-start;background:var(--bg);padding:20px 22px;border-bottom:1px solid var(--line)}.links.open{display:flex}}
+@media(max-width:560px){.grid,.stats,.steps{grid-template-columns:1fr}.hero{padding:80px 0 100px}section{padding:58px 0}.db,.dh{padding-left:20px;padding-right:20px}}
+@media(prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+
+/* Tema formal pemerintahan */
+:root{--logo:url("data:image/png;base64,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");--bg:#f3f6f3;--surf:#fff;--surf2:#e8efea;--ink:#10241a;--muted:#465a4f;--navy:#08492a;--navy2:#0a5c34;--gold:#f2c230;--acc:#0a6b36;--line:#d3ded6;--shadow:0 10px 30px #08492a1c}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#08150e;--surf:#0f2318;--surf2:#0b1c12;--ink:#eef4ef;--muted:#a8b9ae;--navy:#04200f;--acc:#7fdca6;--line:#21402e;--shadow:0 10px 30px #0007}}
+:root[data-theme="dark"]{--bg:#08150e;--surf:#0f2318;--surf2:#0b1c12;--ink:#eef4ef;--muted:#a8b9ae;--navy:#04200f;--acc:#7fdca6;--line:#21402e;--shadow:0 10px 30px #0007}
+.skip{position:absolute;left:12px;top:-60px;background:var(--gold);color:#1b1405;padding:10px 16px;border-radius:8px;z-index:50;font-weight:700}.skip:focus{top:8px}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}.hero :focus-visible,.dh :focus-visible,.footer :focus-visible,.ribbon :focus-visible{outline-color:var(--gold)}
+.ribbon{background:#032616;color:var(--gold)}.nav{border-bottom:3px solid var(--gold)}
+.mark{background:var(--logo) center/contain no-repeat;box-shadow:none;border-radius:0;width:40px;height:50px}
+.links a:hover{color:var(--acc)}.icon-btn{width:44px;height:44px}.btn{min-height:44px}
+.btn{background:linear-gradient(135deg,#0c8043,#075a2c);color:#fff;box-shadow:0 6px 16px #08492a44}
+.btn.ghost{background:transparent;color:inherit;border:1px solid var(--gold)}.btn.dark{background:var(--navy);color:#fff}
+.hero{background:linear-gradient(120deg,#042f19,#08492a 58%,#0b6338)}
+.hero:after{border-color:#f2c23044;box-shadow:0 0 0 40px #f2c2300c,0 0 0 90px #f2c23006}
+.hero p{color:#d8e8de}.hero .eyebrow,.dh .eyebrow{color:var(--gold)}.hero .wrap{position:relative}
+.herologo{display:none}
+@media(min-width:900px){.hero h1{max-width:740px}.herologo{display:block;position:absolute;right:22px;top:50%;transform:translateY(-50%);width:230px;height:290px;background:var(--logo) center/contain no-repeat;filter:drop-shadow(0 14px 30px #0009)}}
+.eyebrow{color:var(--acc)}.tag{background:#0a6b3617;color:var(--acc)}
+.stat{border-top-color:var(--acc);border-radius:14px}.card,.panel,.ag,details{border-radius:14px}.card:hover{border-color:var(--acc)}
+.field:focus{outline:2px solid var(--acc);border-color:var(--acc)}
+.step:before,.date{color:var(--gold)}dialog{border-color:var(--navy2)}.guide{border-left-color:var(--acc)}
+.out{background:#0a6b3614;border-color:#0a6b3655}.footer{background:#032616}.footer a{color:var(--gold)}
+.fh{display:flex;gap:14px;align-items:center}.fh .mark{width:44px;height:56px;flex:none}
+
+/* Tema natural formal premium */
+:root{--bg:#f5f0e4;--surf:#fffefb;--surf2:#efe8d6;--ink:#1d2a21;--muted:#525d54;--navy:#1f3d2e;--navy2:#2f5d44;--gold:#c19a43;--brass:#76590f;--acc:#2f5d44;--line:#dcd2ba;--shadow:0 14px 40px #3a2f1418;--pat:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cpath d='M24 2 46 24 24 46 2 24Z' fill='none' stroke='%23b8913a' stroke-opacity='.2'/%3E%3Cpath d='M24 14 34 24 24 34 14 24Z' fill='none' stroke='%232f5d44' stroke-opacity='.1'/%3E%3C/svg%3E")}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111a14;--surf:#17231b;--surf2:#0e1611;--ink:#f1ede2;--muted:#b0bcb2;--navy:#0b1510;--brass:#e0bd62;--acc:#a9d4b8;--line:#2b3d31;--shadow:0 14px 40px #0008}}
+:root[data-theme="dark"]{--bg:#111a14;--surf:#17231b;--surf2:#0e1611;--ink:#f1ede2;--muted:#b0bcb2;--navy:#0b1510;--brass:#e0bd62;--acc:#a9d4b8;--line:#2b3d31;--shadow:0 14px 40px #0008}
+body::before{background:var(--navy)}.ribbon{background:var(--navy);color:var(--gold)}
+.nav{background:color-mix(in srgb,var(--surf) 94%,transparent);border-bottom:3px double var(--gold)}
+.links a{text-transform:uppercase;letter-spacing:1.1px;font-size:12.5px}.brand b{letter-spacing:.3px}
+.btn{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;border:1px solid var(--gold);border-radius:6px;box-shadow:0 8px 20px #1f3d2e33;letter-spacing:.3px}
+.btn:hover{background:linear-gradient(135deg,#3a6e52,#244a37)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--brass);box-shadow:none}.btn.dark{background:var(--navy)}
+.hero{color:var(--ink);padding:124px 0 134px;background:radial-gradient(circle at 86% 14%,#c19a4328,transparent 38%),radial-gradient(circle at 4% 96%,#2f5d4424,transparent 42%),var(--pat),linear-gradient(180deg,var(--surf),var(--bg))}
+.hero:before{inset:12px;background:none;border:1px solid #c19a4388;pointer-events:none}
+.hero:after{border-color:#c19a4333;box-shadow:0 0 0 40px #c19a4310,0 0 0 90px #c19a4308}
+.hero .wrap{padding:0 36px}.hero h1,.hero .btn.ghost{color:var(--ink)}.hero p{color:var(--muted)}
+.hero .eyebrow,.hero .gold{color:var(--brass)}.hero :focus-visible{outline-color:var(--acc)}
+.addr{background:var(--surf);border-color:var(--gold);color:var(--ink)}
+.herologo{filter:drop-shadow(0 16px 26px #1f3d2e44)}
+.eyebrow{color:var(--brass);display:inline-flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}
+.top h2:after{content:"";display:block;width:70px;height:2px;margin-top:14px;background:linear-gradient(90deg,var(--gold),transparent)}
+.tag{background:#c19a4322;color:var(--brass)}.links a:hover{color:var(--acc)}
+.stat,.card,.panel,.ag,details{border-radius:8px}.stat{border-top-color:var(--gold)}
+section{background:var(--surf);border-top:1px solid var(--line)}.alt{background:var(--pat),var(--surf2)}
+.card:hover{border-color:var(--gold)}
+.ico{display:inline-grid;place-items:center;width:54px;height:54px;border-radius:50%;background:var(--surf2);border:1px solid var(--gold);font-size:24px}
+.step{background:linear-gradient(160deg,var(--navy2),var(--navy));border-radius:8px;border-top:3px solid var(--gold)}
+.step:before,.date{color:var(--gold)}.date{background:var(--navy)}
+.footer{background:var(--pat),var(--navy);border-top:4px solid var(--gold)}
+.val{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:34px}
+.val div{padding:30px 24px;border-right:1px solid var(--line);background:var(--surf)}.val div:last-child{border:0}
+.val b{font:700 40px 'Playfair Display',serif;color:var(--brass);display:block}.val h3{font-size:19px;margin:6px 0}.val p{margin:0;color:var(--muted);font-size:14px}
+@media(max-width:900px){.val{grid-template-columns:1fr 1fr}.val div{border-bottom:1px solid var(--line)}}
+@media(max-width:560px){.val{grid-template-columns:1fr}.hero .wrap{padding:0 30px}}
+
+/* Tema putih bersih: navy & emas */
+:root{--bg:#fff;--surf:#fff;--surf2:#fff;--ink:#0f2540;--muted:#4d5b6e;--navy:#0f2540;--navy2:#1b3a68;--gold:#b08d3c;--brass:#7c5f14;--acc:#1b3a68;--line:#e3e6ec;--shadow:0 18px 50px #0f254014;--pat:none}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1424;--surf:#101c33;--surf2:#101c33;--ink:#f4f1e8;--muted:#a9b5c8;--navy:#08101e;--brass:#e2c06a;--acc:#a9c4ee;--line:#24344f;--shadow:0 18px 50px #0009}}
+:root[data-theme="dark"]{--bg:#0b1424;--surf:#101c33;--surf2:#101c33;--ink:#f4f1e8;--muted:#a9b5c8;--navy:#08101e;--brass:#e2c06a;--acc:#a9c4ee;--line:#24344f;--shadow:0 18px 50px #0009}
+.nav{background:var(--surf);border-bottom:1px solid var(--line);box-shadow:0 6px 24px #0f254010}
+.links a{position:relative;padding:6px 0}.links a:after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--gold);transition:.25s}.links a:hover:after{width:100%}
+.btn{background:linear-gradient(135deg,var(--navy2),var(--navy));border:1px solid var(--navy);color:#fff;box-shadow:0 10px 24px #0f254030}
+.btn:hover{background:var(--gold);border-color:var(--gold);color:#1b1405}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--navy);box-shadow:none}.btn.ghost:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.hero{background:var(--surf);padding:96px 0 150px}.hero:before,.hero:after{display:none}.hero .wrap{padding:0 22px}
+.hero h1{font-size:clamp(40px,5.6vw,72px);letter-spacing:-1.5px}.hero .gold{font-style:italic}
+@media(min-width:900px){.hero h1{max-width:700px}.herologo{width:320px;height:320px;right:34px;background:var(--logo) center/auto 58% no-repeat;background-color:var(--surf);border-radius:50%;filter:none;box-shadow:0 30px 70px #0f254020}
+.herologo:before{content:"";position:absolute;inset:0;border:1px solid var(--gold);border-radius:50%}.herologo:after{content:"";position:absolute;inset:-18px;border:1px dashed #b08d3c99;border-radius:50%}}
+.stats{gap:0;margin-top:-72px;background:var(--navy);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;border-bottom:3px solid var(--gold)}
+.stat{background:transparent;border:0;border-radius:0;box-shadow:none;color:#fff;border-right:1px solid #ffffff24;padding:28px}.stat:last-child{border-right:0}
+.stat b{color:var(--gold);font-size:38px}.stat small{color:#c9d3e3}
+section{background:var(--surf);padding:96px 0;border-top:0}section+section,main>div+section{border-top:1px solid var(--line)}.alt{background:var(--surf)}
+.wrap:not(.two)>.top{margin-left:auto;margin-right:auto;text-align:center}
+.wrap:not(.two)>.top .eyebrow:after{content:"";width:28px;height:1px;background:var(--gold)}
+.wrap:not(.two)>.top h2:after{margin-left:auto;margin-right:auto;width:56px;background:var(--gold)}
+.search{display:block;margin:0 auto 18px;max-width:460px;border-radius:999px;padding:14px 22px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:32px}
+.chip{border:1px solid var(--line);background:var(--surf);border-radius:999px;padding:9px 18px;font-size:13px;font-weight:600;min-height:44px}
+.chip:hover{border-color:var(--gold)}.chip[aria-pressed=true]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.card,.panel{border-radius:12px}.card{box-shadow:0 10px 30px #0f254010}
+.svc{position:relative;padding:30px 26px;overflow:hidden}.svc:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--gold),transparent)}
+.no{position:absolute;right:20px;top:12px;font:700 36px 'Playfair Display',serif;color:var(--line)}
+.meta2{display:block;font-size:12px;color:var(--muted);margin-top:12px;letter-spacing:.4px}
+.step{background:var(--surf);color:var(--ink);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:12px}.step span{color:var(--muted)}.step:before{color:var(--brass)}
+.field{border-radius:8px;background:var(--surf)}.footer a{color:var(--gold)}
+dialog{width:min(94vw,680px);border-radius:16px}.dh{background:var(--navy)}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:500;margin:8px 0}.chk input{width:20px;height:20px;margin-top:2px;accent-color:var(--navy2);flex:none}
+.prog{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin:12px 0 6px}.prog i{display:block;height:100%;width:0;background:var(--gold);transition:.3s}
+@media(max-width:900px){.stat{border-bottom:1px solid #ffffff24}}
+@media(max-width:560px){.stat{border-right:0}.stats{margin-top:-40px}}
+</style></head><body><a class="skip" href="#profil">Lewati ke konten utama</a>
+<div class="ribbon">PROTOTIPE DEMONSTRASI · Data kontak, angka, dan agenda adalah contoh; belum situs resmi pemerintah</div>
+<header class="nav"><div class="wrap nav-in">
+<a class="brand" href="#beranda"><span class="mark" role="img" aria-label="Lambang daerah"></span><span><b>Lk. IX Sinaksak</b><small>Kec. Tapian Dolok · Sumatera Utara</small></span></a>
+<nav class="links" id="links" aria-label="Navigasi utama"><a href="#profil">Profil</a><a href="#layanan">Layanan</a><a href="#alur">Alur</a><a href="#berita">Pengumuman</a><a href="#pengaduan">Pengaduan</a><a href="#kontak">Kontak</a><button class="icon-btn" id="theme" aria-label="Ganti tema">◐</button></nav>
+<button class="icon-btn menu" id="menu" aria-label="Buka navigasi" aria-expanded="false" aria-controls="links">☰</button></div></header>
+<main>
+<div class="hero" id="beranda"><div class="wrap"><div class="herologo" role="img" aria-label="Lambang daerah"></div>
+<div class="eyebrow">Portal digital warga · Jl. TG. Purba</div>
+<h1>Portal <span class="gold">Pelayanan</span> Warga Lingkungan IX.</h1>
+<p>Satu pintu digital untuk warga Lingkungan IX, Kelurahan Sinaksak: layanan surat, pengumuman, pengaduan, dan aspirasi, dirancang rapi, transparan, dan mudah diakses dari ponsel.</p>
+<div class="addr">📍 Jl. TG. Purba, Lk. IX · Kel. Sinaksak · Kec. Tapian Dolok · Sumatera Utara</div>
+<div class="actions"><a class="btn" href="#layanan">Jelajahi Layanan →</a><a class="btn ghost" href="#pengaduan">Buat Pengaduan</a></div>
+</div></div>
+<div class="wrap stats">
+<div class="stat reveal"><b data-n="24">0</b><small>Jam akses informasi (konsep)</small></div>
+<div class="stat reveal"><b data-n="13">0</b><small>Jenis layanan warga</small></div>
+<div class="stat reveal"><b data-n="4">0</b><small>Tahap penanganan pengaduan</small></div>
+<div class="stat reveal"><b data-n="1">0</b><small>Portal terpadu</small></div></div>
+
+<section id="profil"><div class="wrap">
+<div class="top reveal"><span class="eyebrow">Mengenal lingkungan</span><h2>Lingkungan IX, Kelurahan Sinaksak</h2><p>Terletak di Jl. TG. Purba, Kecamatan Tapian Dolok, Sumatera Utara. Sejarah, struktur kepengurusan, dan data kependudukan akan dilengkapi dari sumber resmi kelurahan.</p></div>
+<div class="grid">
+<div class="card reveal"><span class="ico">🏛️</span><h3>Pemerintahan Lingkungan</h3><p>Kepala lingkungan, perangkat kelurahan, dan saluran komunikasi resmi.</p></div>
+<div class="card reveal"><span class="ico">🗺️</span><h3>Wilayah &amp; Fasilitas</h3><p>Batas wilayah, fasilitas umum, rumah ibadah, dan potensi ekonomi lokal.</p></div>
+<div class="card reveal"><span class="ico">🤝</span><h3>Partisipasi Warga</h3><p>Gotong royong, musyawarah lingkungan, dan kegiatan kemasyarakatan.</p></div></div><div class="val reveal"><div><b>I</b><h3>Transparan</h3><p>Syarat dan alur layanan diumumkan terbuka.</p></div><div><b>II</b><h3>Tertib</h3><p>Setiap permohonan dicatat dan ditelusuri.</p></div><div><b>III</b><h3>Ramah</h3><p>Warga dilayani dengan santun dan setara.</p></div><div><b>IV</b><h3>Akuntabel</h3><p>Tindak lanjut dapat dipertanggungjawabkan.</p></div></div><p class="note">Draf maklumat pelayanan; menunggu persetujuan pengurus.</p>
+</div></section>
+
+<section id="layanan" class="alt"><div class="wrap">
+<div class="top reveal"><span class="eyebrow">Layanan warga</span><h2>Layanan Administrasi Lengkap</h2><p>Pilih layanan, baca panduan, lalu susun konsep permohonan. Semua pengajuan berupa simulasi di perangkat Anda dan belum diterima pihak kelurahan.</p></div>
+<input class="search" id="q" type="search" placeholder="Cari layanan… (mis. domisili, usaha)" aria-label="Cari layanan">
+<div class="chips" id="chips" role="group" aria-label="Filter kategori"></div><div class="grid" id="svc"></div>
+<p class="note">Jangan memasukkan NIK, nomor KK, tanggal lahir, atau alamat lengkap pada prototipe ini.</p>
+</div></section>
+
+<section id="alur"><div class="wrap">
+<div class="top reveal"><span class="eyebrow">Alur pelayanan</span><h2>Empat Langkah yang Jelas</h2></div>
+<div class="steps">
+<div class="step reveal"><b>Ajukan</b><span>Warga mengisi formulir dan memilih kategori.</span></div>
+<div class="step reveal"><b>Verifikasi</b><span>Kepala lingkungan memeriksa kelengkapan.</span></div>
+<div class="step reveal"><b>Proses</b><span>Kelurahan menindaklanjuti sesuai kewenangan.</span></div>
+<div class="step reveal"><b>Selesai</b><span>Status dan hasil diinformasikan kepada warga.</span></div></div>
+</div></section>
+
+<section id="berita" class="alt"><div class="wrap two">
+<div><div class="top reveal"><span class="eyebrow">Papan pengumuman</span><h2>Kabar Lingkungan</h2><p>Konten ilustrasi; admin dapat menggantinya dengan pengumuman resmi.</p></div>
+<div class="grid" style="grid-template-columns:1fr">
+<article class="card news reveal"><div><span class="tag" style="margin:0 0 8px">Contoh · Kegiatan</span><h3>Gotong royong kebersihan Jl. TG. Purba</h3><p>Kerja bakti membersihkan parit dan bahu jalan bersama warga Lk. IX.</p></div><span class="meta">Tanggal diisi admin</span></article>
+<article class="card news reveal"><div><span class="tag" style="margin:0 0 8px">Contoh · Layanan</span><h3>Informasi jam pelayanan</h3><p>Jadwal layanan administrasi akan diumumkan setelah dikonfirmasi pengurus.</p></div><span class="meta">Tanggal diisi admin</span></article></div></div>
+<div><div class="top reveal"><span class="eyebrow">Agenda</span><h2>Kegiatan Mendatang</h2></div>
+<div class="agenda">
+<div class="ag reveal"><div class="date">00<small>BULAN</small></div><div><b>Musyawarah lingkungan</b><div class="meta" style="margin:0">Jadwal &amp; tempat menunggu konfirmasi</div></div></div>
+<div class="ag reveal"><div class="date">00<small>BULAN</small></div><div><b>Posyandu &amp; kegiatan kesehatan</b><div class="meta" style="margin:0">Jadwal menunggu konfirmasi</div></div></div>
+<div class="ag reveal"><div class="date">00<small>BULAN</small></div><div><b>Peringatan hari besar</b><div class="meta" style="margin:0">Jadwal menunggu konfirmasi</div></div></div></div></div>
+</div></section>
+
+<section id="pengaduan"><div class="wrap two">
+<div class="panel reveal"><h3>Pengaduan Warga</h3>
+<form id="cf"><div class="fg"><label for="cl">Lokasi kejadian</label><input class="field" id="cl" required maxlength="120" placeholder="Mis. Jl. TG. Purba, dekat…"></div>
+<div class="fg"><label for="ck">Kategori</label><select class="field" id="ck"><option>Jalan rusak / berlubang</option><option>Drainase &amp; genangan air</option><option>Penerangan jalan</option><option>Kebersihan &amp; sampah</option><option>Keamanan lingkungan</option><option>Lainnya</option></select></div>
+<div class="fg"><label for="cd">Uraian</label><textarea class="field" id="cd" required maxlength="700" placeholder="Kapan terjadi, kondisi, dan dampaknya…"></textarea></div>
+<button class="btn" type="submit">Buat Tiket Simulasi</button><div class="out" id="co" role="status"></div></form>
+<div class="warn">Kondisi darurat: hubungi layanan darurat setempat langsung. Form ini tidak mengirim data.</div></div>
+<div><div class="top reveal"><span class="eyebrow">Lacak laporan</span><h2>Cek Status Tiket</h2><p>Masukkan nomor tiket simulasi yang dibuat di perangkat ini.</p></div>
+<div class="panel reveal"><div class="fg"><label for="tid">Nomor tiket</label><input class="field" id="tid" placeholder="SNK-XXXXXX"></div><button class="btn dark" id="tb" type="button">Lacak</button><div class="out" id="to" role="status"></div>
+<p class="note">Tiket hanya tersimpan di peramban Anda (bila diizinkan), bukan di server.</p></div></div>
+</div></section>
+
+<section id="aspirasi" class="alt"><div class="wrap two">
+<div class="top reveal"><span class="eyebrow">Aspirasi</span><h2>Suara Warga Didengar</h2><p>Sampaikan saran untuk kemajuan Lk. IX. Pengembangan berikutnya dapat dihubungkan ke sistem penyimpanan resmi kelurahan.</p>
+<div style="margin-top:22px"><details open><summary>Apakah situs ini resmi?</summary><p>Belum. Ini prototipe untuk didiskusikan dengan kepala lingkungan dan pihak kelurahan.</p></details><details><summary>Siapa yang memperbarui isi?</summary><p>Usulan: admin yang ditunjuk kelurahan/lingkungan dengan alur persetujuan.</p></details><details><summary>Apakah data saya aman?</summary><p>Prototipe tidak mengirim data apa pun ke server.</p></details></div></div>
+<div class="panel reveal"><h3>Formulir Aspirasi</h3><form id="af"><div class="fg"><label for="an">Nama / inisial</label><input class="field" id="an" required maxlength="80" placeholder="Mis. Warga Lk. IX"></div><div class="fg"><label for="ap">Isi aspirasi</label><textarea class="field" id="ap" required maxlength="500" placeholder="Tuliskan saran atau masukan…"></textarea></div><button class="btn" type="submit">Kirim (Simulasi)</button><div class="out" id="ao" role="status">Simulasi berhasil. Tidak ada data yang dikirim atau disimpan.</div></form></div>
+</div></section>
+
+<section id="kontak"><div class="wrap two">
+<div class="top reveal" style="margin:0"><span class="eyebrow">Kontak</span><h2>Temukan Kami</h2><p>Informasi resmi menunggu verifikasi pengurus.</p>
+<div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jl.+TG.+Purba+Sinaksak+Tapian+Dolok">Buka di Google Maps ↗</a></div></div>
+<div class="panel reveal"><p><b>Alamat</b><br>Jl. TG. Purba, Lk. IX, Kelurahan Sinaksak, Kecamatan Tapian Dolok, Sumatera Utara</p><p><b>Telepon / WhatsApp</b><br>Menunggu persetujuan</p><p><b>Jam pelayanan</b><br>Menunggu konfirmasi</p><p style="margin:0"><b>Kepala lingkungan</b><br>Menunggu data resmi</p></div>
+</div></section>
+</main>
+
+<dialog id="dlg" aria-labelledby="dt"><div class="dh"><div><span class="eyebrow">Layanan warga · mode demo</span><h2 id="dt"></h2></div><button class="icon-btn" id="dx" aria-label="Tutup" type="button">×</button></div>
+<div class="db"><p id="di" class="note" style="margin-top:0"></p><div class="guide" id="dg"></div><form id="df"><div id="dfs"></div><div class="da"><button type="button" class="btn ghost" id="dc">Batal</button><button class="btn" type="submit">Buat Pratinjau</button></div></form>
+<div class="out" id="dp" role="status"></div><div class="da" id="dd" style="display:none"><button type="button" class="btn dark" id="dl">Unduh konsep (.txt)</button><button type="button" class="btn ghost" id="cp">Salin teks</button></div></div></dialog>
+
+<footer class="footer"><div class="wrap fg2"><div><h3 class="fh"><span class="mark" role="img" aria-label="Lambang daerah"></span>Lk. IX Sinaksak</h3><p style="max-width:460px">Rancangan portal digital Jl. TG. Purba, Kelurahan Sinaksak, Kecamatan Tapian Dolok, Sumatera Utara.</p></div><div><p>Situs demonstrasi; bukan situs resmi pemerintah.<br><a href="#beranda">Kembali ke atas ↑</a></p></div></div></footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const N=["nama","Nama / inisial pemohon","text"],LK=["lk","RT / lingkungan (tanpa alamat lengkap)","text"],K=["ket","Keterangan tambahan","textarea",null,1],T=["tujuan","Instansi / pihak tujuan","text"],SEL=(i,l,o)=>[i,l,"select",o];
+const S=[
+["pengantar","📝","Surat Pengantar RT","Pengantar umum untuk urusan administrasi.","Surat",["Fotokopi KTP-el dan KK","Surat undangan/permintaan instansi tujuan","Pas foto bila diminta"],[N,LK,T,SEL("kep","Keperluan",["Administrasi umum","Pendidikan","Pekerjaan","Perbankan","Lainnya"]),K]],
+["domisili","🏠","Surat Keterangan Domisili","Keterangan tempat tinggal warga.","Surat",["Fotokopi KTP-el dan KK","Bukti tempat tinggal bila diminta","Surat pengantar RT"],[N,LK,SEL("tuj","Tujuan",["Administrasi","Pekerjaan","Pendidikan","Lainnya"]),["lama","Lama tinggal (mis. 3 tahun)","text"],K]],
+["skck","🛡️","Pengantar SKCK","Pengantar untuk pengurusan SKCK.","Surat",["Fotokopi KTP-el dan KK","Pas foto","Surat pengantar RT"],[N,LK,SEL("tuj","Tujuan SKCK",["Melamar kerja","Pendidikan","Pencalonan","Lainnya"]),K]],
+["nikah","💍","Pengantar Nikah","Pengantar administrasi pernikahan.","Surat",["Fotokopi KTP-el dan KK","Pas foto","Dokumen lain sesuai arahan KUA"],[N,LK,["tgl","Rencana tanggal","date"],K]],
+["hilang","🔎","Surat Keterangan Kehilangan","Pengantar laporan kehilangan.","Surat",["Fotokopi KTP-el","Kronologi singkat kejadian"],[N,LK,SEL("brg","Barang / dokumen hilang",["Dokumen identitas","Kendaraan / STNK","Dokumen sekolah","Lainnya"]),["wkt","Perkiraan waktu hilang","text"],K]],
+["pindah","🚚","Pengantar Pindah / Datang","Pengantar perpindahan penduduk.","Kependudukan",["Fotokopi KTP-el dan KK","Keterangan daerah asal/tujuan","Surat pengantar RT"],[N,LK,SEL("jns","Jenis",["Pindah keluar","Datang / pindah masuk"]),["asal","Daerah asal atau tujuan","text"],K]],
+["lahirmati","👶","Pengantar Kelahiran / Kematian","Pengantar peristiwa penting kependudukan.","Kependudukan",["Surat keterangan dari pihak terkait","Fotokopi KTP-el dan KK pelapor"],[N,LK,SEL("jns","Jenis peristiwa",["Kelahiran","Kematian"]),["tgl","Tanggal peristiwa","date"],K]],
+["ktpkk","🪪","Pengantar KTP-el / KK","Pengantar dokumen kependudukan.","Kependudukan",["Dokumen lama bila ada","Fotokopi KK","Surat pengantar RT"],[N,LK,SEL("jns","Jenis urusan",["KTP-el baru","KTP-el hilang/rusak","KK baru","Perubahan data KK"]),K]],
+["usaha","🏪","Surat Keterangan Usaha","Keterangan kegiatan usaha warga.","Usaha & Kegiatan",["Fotokopi KTP-el dan KK","Foto tempat usaha","Surat pengantar RT"],[N,LK,["usaha","Nama / jenis usaha","text"],["lama","Lama usaha berjalan","text"],K]],
+["acara","🎪","Izin Kegiatan / Keramaian","Pemberitahuan acara lingkungan.","Usaha & Kegiatan",["Surat permohonan","Rencana acara dan jumlah peserta","Persetujuan pengurus lingkungan"],[N,LK,["acara","Jenis kegiatan","text"],["tgl","Tanggal pelaksanaan","date"],["jml","Perkiraan peserta","number"],K]],
+["sktm","🤝","Surat Keterangan Tidak Mampu","Pengantar bantuan pendidikan/kesehatan.","Sosial & Layanan",["Fotokopi KTP-el dan KK","Surat pengantar RT","Dokumen pendukung sesuai arahan petugas"],[N,LK,SEL("tuj","Tujuan",["Pendidikan","Kesehatan","Bantuan sosial","Lainnya"]),K]],
+["bantuan","📣","Informasi Bantuan","Pertanyaan seputar program bantuan.","Sosial & Layanan",["Rujuk pengumuman resmi","Tanyakan syarat kepada petugas"],[N,LK,SEL("top","Topik",["Bantuan sosial","Bantuan pendidikan","Bantuan usaha"]),["tny","Pertanyaan","textarea"]]],
+["jadwal","🗓️","Janji Temu Layanan","Usulan waktu kunjungan ke petugas.","Sosial & Layanan",["Jam pelayanan resmi menunggu konfirmasi"],[N,SEL("kep","Keperluan",["Konsultasi surat","Informasi administrasi","Pengaduan warga","Lainnya"]),["tgl","Tanggal diinginkan","date"],K]]];
+const GR=["Semua",...new Set(S.map(s=>s[4]))];let grp="Semua",qv="";const g=$("#svc"),ch=$("#chips");
+ch.innerHTML=GR.map(x=>`<button type="button" class="chip" aria-pressed="${x==grp}" data-g="${x}">${x}</button>`).join("");
+function render(){const r=S.filter(s=>(grp=="Semua"||s[4]==grp)&&(s[2]+s[3]).toLowerCase().includes(qv.toLowerCase()));g.innerHTML=r.map(s=>`<button type="button" class="card svc reveal in" data-s="${s[0]}"><span class="no" aria-hidden="true">${String(S.indexOf(s)+1).padStart(2,"0")}</span><span class="ico" aria-hidden="true">${s[1]}</span><h3>${s[2]}</h3><p>${s[3]}</p><span class="meta2">${s[4]} · ${s[5].length} persyaratan</span><span class="tag">Ajukan →</span></button>`).join("")||'<p class="note">Layanan tidak ditemukan.</p>'}
+ch.onclick=e=>{const b=e.target.closest("[data-g]");if(!b)return;grp=b.dataset.g;$$(".chip").forEach(c=>c.setAttribute("aria-pressed",c==b));render()};
+$("#q").oninput=e=>{qv=e.target.value;render()};render();
+const dlg=$("#dlg");let act=null,draft="";
+function fh([id,l,t,o,op]){const k="f-"+id,r=op?"":"required";const c=t=="textarea"?`<textarea class="field" id="${k}" name="${id}" maxlength="500" ${r}></textarea>`:t=="select"?`<select class="field" id="${k}" name="${id}" ${r}><option value="">— Pilih —</option>${o.map(x=>`<option>${x}</option>`).join("")}</select>`:`<input class="field" id="${k}" name="${id}" type="${t}" ${r} ${t=="text"?'maxlength="100"':""}>`;return `<div class="fg"><label for="${k}">${l}${op?" (opsional)":""}</label>${c}</div>`}
+function prog(){const c=$$(".rq"),n=c.filter(x=>x.checked).length;$("#pg").style.width=(c.length?n/c.length*100:0)+"%";$("#pt").textContent=n+" dari "+c.length+" persyaratan siap"}
+g.onclick=e=>{const b=e.target.closest("[data-s]");if(!b)return;act=S.find(s=>s[0]==b.dataset.s);$("#df").reset();$("#dp").style.display="none";$("#dd").style.display="none";$("#dt").textContent=act[2];$("#di").textContent=act[3];$("#dg").innerHTML='<b>Persyaratan umum</b><span class="note" style="display:block;margin:2px 0 6px">Gambaran umum; syarat resmi ditentukan kelurahan. Centang yang sudah Anda siapkan.</span>'+act[5].map(x=>`<label class="chk"><input type="checkbox" class="rq">${x}</label>`).join("")+'<div class="prog"><i id="pg"></i></div><small id="pt"></small>';prog();$("#dfs").innerHTML=act[6].map(fh).join("");dlg.showModal()};
+$("#dg").onchange=prog;$("#dx").onclick=$("#dc").onclick=()=>dlg.close();
+$("#df").onsubmit=e=>{e.preventDefault();const d=new FormData(e.target),c=$$(".rq"),id="SNK-"+Math.random().toString(36).slice(2,8).toUpperCase(),tg=new Date().toLocaleDateString("id-ID",{day:"numeric",month:"long",year:"numeric"});draft="KONSEP / SIMULASI — BUKAN SURAT RESMI\nLINGKUNGAN IX · KELURAHAN SINAKSAK\nKEC. TAPIAN DOLOK · SUMATERA UTARA\n————————————\n"+act[2].toUpperCase()+"\nNomor tiket: "+id+"\nTanggal: "+tg+"\n\n"+act[6].map(f=>f[1]+": "+(d.get(f[0])||"-")).join("\n")+"\n\nKelengkapan berkas: "+c.filter(x=>x.checked).length+" dari "+c.length+" siap\n\nKonfirmasi prosedur dan syarat resmi kepada pengurus. Nomor tiket dapat dicek di bagian Cek Status Tiket.";const a=ld();a.push({id,k:act[2],l:"Layanan warga",d:draft,at:Date.now()});sv(a);const p=$("#dp");p.textContent=draft;p.style.display="block";$("#dd").style.display="flex";p.scrollIntoView({behavior:"smooth",block:"nearest"})};
+$("#dl").onclick=()=>{const u=URL.createObjectURL(new Blob([draft],{type:"text/plain;charset=utf-8"})),a=document.createElement("a");a.href=u;a.download="konsep-"+act[0]+"-sinaksak.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
+$("#cp").onclick=async e=>{const b=e.currentTarget;try{await navigator.clipboard.writeText(draft);b.textContent="Tersalin ✓"}catch(x){b.textContent="Salin manual dari kotak"}setTimeout(()=>b.textContent="Salin teks",2000)};
+function ld(){try{return JSON.parse(localStorage.getItem("snk-t")||"[]")}catch(e){return[]}}
+function sv(a){try{localStorage.setItem("snk-t",JSON.stringify(a))}catch(e){}}
+const ST=["Diterima (simulasi)","Diverifikasi","Dalam penanganan","Selesai"];
+$("#cf").onsubmit=e=>{e.preventDefault();const id="SNK-"+Math.random().toString(36).slice(2,8).toUpperCase(),t={id,k:$("#ck").value,l:$("#cl").value.trim(),d:$("#cd").value.trim(),at:Date.now()};const a=ld();a.push(t);sv(a);const o=$("#co");o.textContent="Tiket simulasi dibuat (tidak terkirim)\nNomor: "+id+"\nKategori: "+t.k+"\nLokasi: "+t.l;o.style.display="block";$("#tid").value=id;e.target.reset()};
+$("#tb").onclick=()=>{const v=$("#tid").value.trim().toUpperCase(),t=ld().find(x=>x.id==v),o=$("#to");o.style.display="block";if(!t){o.textContent="Tiket tidak ditemukan di perangkat ini.";return}const i=Math.min(3,Math.floor((Date.now()-t.at)/6e4));o.textContent="Tiket "+t.id+"\nKategori: "+t.k+"\nStatus simulasi: "+ST[i]+"\n(Status berpindah otomatis tiap menit sebagai demonstrasi.)"};
+$("#af").onsubmit=e=>{e.preventDefault();$("#ao").style.display="block";e.target.reset()};
+$("#menu").onclick=e=>{const o=$("#links").classList.toggle("open");e.currentTarget.setAttribute("aria-expanded",o)};$$(".links a").forEach(a=>a.onclick=()=>$("#links").classList.remove("open"));
+function th(m){document.documentElement.dataset.theme=m;try{localStorage.setItem("snk-th",m)}catch(e){}}
+try{const m=localStorage.getItem("snk-th");if(m)document.documentElement.dataset.theme=m}catch(e){}
+$("#theme").onclick=()=>{const d=document.documentElement.dataset.theme||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");th(d=="dark"?"light":"dark")};
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");const n=x.target.querySelector("[data-n]");if(n&&!n.dataset.d){n.dataset.d=1;const T=+n.dataset.n;let c=0;const s=setInterval(()=>{c++;n.textContent=c;if(c>=T)clearInterval(s)},Math.max(30,900/T))}io.unobserve(x.target)}}),{threshold:.15});
+$$(".reveal:not(.in)").forEach(el=>io.observe(el));
+</script></body></html>
